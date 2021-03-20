@@ -47,12 +47,12 @@
      fit-margin-right="0"
      fit-margin-bottom="0"
      inkscape:zoom="2.0321197"
-     inkscape:cx="292.85484"
-     inkscape:cy="197.80519"
+     inkscape:cx="234.98443"
+     inkscape:cy="281.50725"
      inkscape:window-x="-11"
      inkscape:window-y="-11"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g34" />
+     inkscape:current-layer="a889" />
   <g
      inkscape:groupmode="layer"
      inkscape:label="Image"
@@ -10987,6 +10987,7 @@ dwwAAAAASUVORK5CYII=
        y="299.25" />
     <a
        xlink:href="../html/month1.html"
+       target="_blank"
        xlink:title="Month 1"
        id="a869">
       <path
@@ -11000,6 +11001,7 @@ dwwAAAAASUVORK5CYII=
     </a>
     <a
        xlink:href="../html/month2.html"
+       target="_blank"
        inkscape:label="a874"
        xlink:title="Month 2"
        id="a874">
@@ -11013,6 +11015,7 @@ dwwAAAAASUVORK5CYII=
     </a>
     <a
        xlink:href="../html/month3.html"
+       target="_blank"
        xlink:title="Month 3"
        id="a882">
       <path
@@ -11022,6 +11025,19 @@ dwwAAAAASUVORK5CYII=
          inkscape:label="m3"
          onmouseover="this.style.opacity=1"
          onmouseout="this.style.opacity=0" />
+    </a>
+    <a
+       xlink:href="../html/month4.html"
+       xlink:title="Month 4"
+       target="_blank"
+       id="a889">
+      <path
+         style="fill:#0000ff;fill-opacity:0.34;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;opacity:0"
+         d="m 648.40467,442.94232 -6.39726,20.66807 -14.76291,-3.44468 -17.2234,-1.96838 h -12.30242 v -22.14437 h 12.79452 l 15.25501,1.96839 15.255,2.46049 z"
+         id="path887"
+         inkscape:label="m4"
+         onmouseout="this.style.opacity=0"
+         onmouseover="this.style.opacity=1" />
     </a>
   </g>
 </svg>
