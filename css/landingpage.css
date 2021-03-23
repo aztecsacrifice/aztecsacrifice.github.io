@@ -2,4 +2,14 @@ body {
     background-color: rgb(190, 153, 107);
     font-family: 'Courier New', Courier, monospace;
     color: black;
+    align-items: center;
+}
+
+a.buttonwhy {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
 }
