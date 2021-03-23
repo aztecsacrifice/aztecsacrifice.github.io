@@ -6,6 +6,14 @@ body {
     margin: auto;
 }
 
+.wall {
+    background-color: rgb(190, 175, 157);
+    overflow: hidden;
+    position: static;
+    width: 80%;
+    height: 80%;
+}
+
 .whybutton {
     background-color: brown;
     border: 2px solid black;
