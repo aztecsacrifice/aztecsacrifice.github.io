@@ -8,13 +8,13 @@ body {
 
 .why {
     background-color: brown;
-    border: 2px solid black;
+    border: 5px solid black;
     color: black;
-    padding: 15px 32px;
+    padding: 10px 27px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .bottom_panel {
@@ -25,12 +25,12 @@ body {
     width: 100%;
 }
 
-.bottom_panel a {
+a.bottom_panel {
     float: left;
     display: block;
     color: #a8a8a8;
     text-align: center;
-    padding: 14px 16px;
+    padding: 12px 14px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 15px;
 }
