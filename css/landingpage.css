@@ -2,7 +2,8 @@ body {
     background-color: rgb(190, 153, 107);
     font-family: 'Courier New', Courier, monospace;
     color: black;
-    align-items: center;
+    text-align: center;
+    margin: auto;
 }
 
 a.buttonwhy {
