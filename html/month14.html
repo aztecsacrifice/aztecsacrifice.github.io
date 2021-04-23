@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <head>
+    <link rel="stylesheet" href="../css/mainstyle.css" type="text/css">
     <title>MONTH 14</title>
 </head>
 <body>
     <main>
         <h1>Quecholli</h1>
+        <button type="button" class="collapsible">Ritual Overview</button>
+        <div class="content">
         <p>Once the previous month ended, nothing was done for five days. After these five days, everyone offered reeds for arrows, and the warriors took them and straightened them in the fire. On the third day after the five had ended, everyone gathered around as the small boys were taken up to the top of the pyramid temple and cut blood from their ears, anointing their temples with it. It was thus said: “The deer are [anointed] with blood”; they fasted for the deer, that they might hunt them. </p>
         <p>After, they assembled in the courtyard and finished preparing arrows; each man drew blood, and if a man was not caught drawing his own blood, they stripped him of his cape.</p>
         <p>The fourth day was called “Arrows are made for the homes”, as all men made arrows in their homes. </p>
@@ -16,7 +19,26 @@
         <p>So when time had finally come for the feast of Quecholli, then those who were to die went into the sand. They were taken in precession to the offering stone, encircled it abd walked back down the pyramid steps. Then, they were taken to the tribal teples for a vigil, where, at midnight, hair was taken from the crown of their heads and all their belongings were burned. </p>
         <p>At dawn, they adorned their paper vestments, in which they were to die. They were taken again to the foot of the pyramid, where four of the captives had their feet and hands bound, as priests carried them up the stairs and hence slew them upon the offering stone. </p>
         <p>After, all the other captives went up on their own volition. After these captives have died, those bearing the likeness of Mixcoatl died; then those with the likeness of Tlamatzincatl/ And at dawn, the women died at the Temple of Coatlan; some went up the steps dancing, others wept. </p>
+    </div>
         <a href="homepage.html">Return Home</a><br>
-        <a href="links.html">(Site Index)</a>
+        <div class="bottom_panel">
+            <a href="links.html">Index</a>
+        </div>
     </main>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+    </script>
 </body>

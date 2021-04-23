@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <head>
+    <link rel="stylesheet" href="../css/mainstyle.css" type="text/css">
     <title>MONTH 16</title>
 </head>
 <body>
     <main>
         <h1>Sixteenth Month</h1> <br>
+        <button type="button" class="collapsible">Ritual Overview</button>
+        <div class="content">
         <p>
             Ritual Name: Atemoztli <br>
             Associated Gods: ... <br>
@@ -12,7 +15,26 @@
             ((Description of ritual)) <br>
             ((This will be an analysis of the symbolism behind elements of the ritual and the material environment))<br>
         </p>
+    </div>
         <a href="homepage.html">Return Home</a><br>
-        <a href="links.html">(Site Index)</a>
+        <div class="bottom_panel">
+            <a href="links.html">Index</a>
+        </div>
     </main>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+    </script>
 </body>

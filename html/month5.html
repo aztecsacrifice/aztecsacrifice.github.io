@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <head>
+    <link rel="stylesheet" href="../css/mainstyle.css" type="text/css">
     <title>MONTH 5</title>
 </head>
 <body>
     <main>
         <h1>Toxcatl</h1>
+        <button type="button" class="collapsible">Ritual Overview</button>
+        <div class="content">
         <p>The great feast of Tezcatlipoca was held; the person to previous impersonate Tezcatlipoca was then killed. These impersonators were nearly always prisoners, and must have no defects. This captive was then taught how to play the flute, and hold flowers in the flute of which he was permitted to smell. Then, he walked through the streets with his flute and his flowers. When people saw him among the streets, he was met with high regard as if he was the god himself. Following him was four young men and four warriors, each with their hair cut short as if they were slaves.</p>
         <p>The impersonator was covered with black paint and white eagle feathers, as well as a crown of flowers and a scarf of flowers; from his ears hung gold shell pendants, and around his neck he wore a shell necklace. On his legs, they placed golden bells, which jingled.</p>
         <p>As the feast of Toxcatl drew near, the impersonator was married to four women in the month of Uey tocotzli. He then abandoned varius adornments in various places and walked around fasting, painted black. His hair was tied up like that of a war captain and adorned with a heron feather ornament with a single quetzal feather attached. The women were named respectively: Xochiquetzal, Xilonen, Atlatonan, and Uixtociuatl.</p>
@@ -12,7 +15,26 @@
         <p>After singing and dancing, the impersonator and his four wives went on a canoe and landed at Acaquilpan (aka Caualtepec). Here, the impersonator was abandoned a little ways from Tlapitzauhcan. Where he was to die stood a small temple called Tlacochcalco. On the first step, the impersonator shattered his flute. Once at the top of the temple, the priests threw him upon his back upon the sacrifical stone; his heart was then offered to the sun. His bodied was then lowered rather than dropped down the temple steps; his severed head was strung on a skull-rack.</p>
         <p>At the temple of Uitznuauc, a figure of Uitzilopochtli was formed on a serpent bench.</p>
         <p>On the last day died Ixteucale, he who had lived with Titlacauan, whose heart was once again offered to the sun and his head placed on the skull rack. At this time, the priests went about cutting the skin of youths, young boys, and children in their cradles, specifically the skin of their stomach, breasts, and arms. This was done at the end of the feast of Toxcatl.</p>
+    </div>
         <a href="homepage.html">Return Home</a><br>
-        <a href="links.html">(Site Index)</a>
+        <div class="bottom_panel">
+            <a href="links.html">Index</a>
+        </div>
     </main>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+    </script>
 </body>

@@ -1,13 +1,35 @@
 <!DOCTYPE html>
 <head>
+    <link rel="stylesheet" href="../css/mainstyle.css" type="text/css">
     <title>MONTH 4</title>
 </head>
 <body>
     <main>
         <h1>Uei tocoztli</h1>
+        <button type="button" class="collapsible">Ritual Overview</button>
+        <div class="content">
         <p>To begin, there was a four day fast. The young men set up cattails covered in blood in all the houses; this blood was taken from the young man himself, from his leg or from his ears. </p>
         <p>((Insert corn here))</p>
+        </div>
         <a href="homepage.html">Return Home</a><br>
-        <a href="links.html">(Site Index)</a>
+        <div class="bottom_panel">
+            <a href="links.html">Index</a>
+        </div>
     </main>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+    </script>
 </body>

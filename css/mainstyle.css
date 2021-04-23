@@ -12,6 +12,7 @@ body {
     cursor: pointer;
     padding: 18px;
     width: 75%;
+    display: inline-block;
     border: none;
     text-align: center;
     outline: none;
@@ -24,8 +25,9 @@ body {
   
   .content {
     padding: 0 18px;
-    display: none;
+    display: inline-block;
     overflow: hidden;
+    width: 75%;
     background-color: #f1f1f1;
   }
 

@@ -1,18 +1,40 @@
 <!DOCTYPE html>
 <head>
+    <link rel="stylesheet" href="../css/mainstyle.css" type="text/css">
     <title>MONTH 10</title>
 </head>
 <body>
     <main>
         <h1>Xocotluetzi</h1>
         <h3>“Xocotl Falleth”</h3>
+        <button type="button" class="collapsible">Ritual Overview</button>
+        <div class="content">
         <p>Directly after the last feast had ended, they planted the xocoli – which was twenty fathoms long – and raised it above the Earth barren, yet to be adorned for another 20 days. Two days before the official feast, the xocoli was lowered once again to the ground. At this point, the xocoli was cut to have an even crown and smooth any knots; additionallu, the fire priests adorned it with papers. </p>
         <p>Then, the xocotl image was fashioned from a dough of fish-amaranth seeds mixed with maize; the papers it adorned were pure white. Halfway up the tree, they bound this xocotl image with ropes. Lifting the xocotl upright this time required much force, and the earth moved beneath the tree. </p>
         <p>Afterwaards, the captors came out with their captives who were to be casr into the fire (description). A vigil was then held for the captives, and at midnight the captors’ took some of the hair from the crown of the captive’s heads’. They then bound the end of the locks of hair with bright red thread, to which two forked heron feathers were attached, The obsidian knife used to cut the captive’s hair was called the :falcon nail”. The hair was then placed in a small woven reed basket called the “hair basket”.</p>
         <p>At dawn, the captives were arranged as a priest stripped them of their paper adornments, which were then burned in the eagle vessel, and thus the captives descended the steps.</p>
         <p>One by one, the captors abandoned their captives at the bottom of the steps; then, the men who were to cast the captives into the fire came down from the temple steps and threw incense into the captives’ face, binding his wrists and ankles as well. They took him upon their backs and threw him into the fire. Immediately after, the captive was retrieved and stretched upon a stone where his heart was cut out and offered to Xiuhtecutli, the representation of fire. </p>
         <p>Afterwards, a day was spent rejoicing. Nearing the end of the day, the youths climbed the xocotl, and whoever was the first to get to the xocotl image scattered the amaranth seed dough and tamales upon everyone. Then, the youth was brought to the palace of sacrifice by the old men of the temple and given many gifts, as the xocotl was torn down. The youth was arrayed in a brown stiped cloak edged with a feathered border.</p>
+    </div>
         <a href="homepage.html">Return Home</a><br>
-        <a href="links.html">(Site Index)</a>
+        <div class="bottom_panel">
+            <a href="links.html">Index</a>
+        </div>
     </main>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+    </script>
 </body>

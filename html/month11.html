@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <head>
+    <link rel="stylesheet" href="../css/mainstyle.css" type="text/css">
     <title>MONTH 11</title>
 </head>
 <body>
     <main>
         <h1>Ochpaniztli</h1>
         <h3>“The Sweeping of the Way”</h3>
+        <button type="button" class="collapsible">Ritual Overview</button>
+        <div class="content">
         <p>For five days, nothing happened. For the next eight does, the ahdn-waving dance began.</p>
         <p>Then, a woman with the likeness of Toci was chosen, and, knowing she was to die, many of the other women tried to make her laugh, for it was said if she wept, it would be an omen of evil.</p>
         <p>For the next four days, a mock fight pursued.</p>
@@ -18,7 +21,26 @@
         <p>As soon as it had been placed, all the chiefs ran to it; whoever got their first quickly took a handful of feathers. Subsequently, the other chiefs also took handfuls of feathers.</p>
         <p>As they were taking feathers, the wearer of the skin of the likeness of Toci stood nearby and followed them, chanting war cries. And when the wearer of the skin of Toci went, everyone spat at her and whoever had flowers in his hands threw flowers at her. </p>
         <p>Toci eventually ran to Tocititlan alongside a few priests, and the Toci skin was then taken off and stretched upon a wooden frame as an image.</p>
+    </div>
         <a href="homepage.html">Return Home</a><br>
-        <a href="links.html">(Site Index)</a>
+        <div class="bottom_panel">
+            <a href="links.html">Index</a>
+        </div>
     </main>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+    </script>
 </body>

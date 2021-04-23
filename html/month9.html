@@ -1,15 +1,37 @@
 <!DOCTYPE html>
 <head>
+    <link rel="stylesheet" href="../css/mainstyle.css" type="text/css">
     <title>MONTH 9</title>
 </head>
 <body>
     <main>
         <h1>Tlaxochimaco</h1>
         <h3>“The Flowers are offered”</h3>
+        <button type="button" class="collapsible">Ritual Overview</button>
+        <div class="content">
         <p>Two days before the feast, flowers were sought scattered upon all the mountains. At dawn, all the flowers everyone had collected were strung together to form a garland, and went to sleep.</p>
         <p>When morning broke, the temple gaurdians decorated an effigy ofUitzilopochtli with garlands of threaded flowers. The folowers were then also given to all the other Gods in all the other temples. </p>
         <p>That night, everyone danced a serpent dance before returning home to their houses to sing to their gods.</p>
+    </div>
         <a href="homepage.html">Return Home</a><br>
-        <a href="links.html">(Site Index)</a>
+        <div class="bottom_panel">
+            <a href="links.html">Index</a>
+        </div>
     </main>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+    </script>
 </body>

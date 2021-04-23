@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <head>
+    <link rel="stylesheet" href="../css/mainstyle.css" type="text/css">
     <title>MONTH 13</title>
 </head>
 <body>
     <main>
         <h1>Tepeilhuitl</h1>
         <h3>“Mountain Feast”</h3>
+        <button type="button" class="collapsible">Ritual Overview</button>
+        <div class="content">
         <p>Heavy sticks covered with a coating of dough and ground amaranth seeds were kept in mens houses as representations of mmountatins.  They also fashioned images in the form of mountains for anyone who had died drowning or being struck by lightning, as well as for anyone who had been slain and not burned but only buried. Towards sundown, the images were bathed to the sound of little clau and sea shell whistles.  </p>
         <p>After these were bathed, they were adorned to be given a human form; they were molded with amaranth seed dough and painted upon them with liquid rubber. Uppon them, they set a headdress.</p>
         <p>Then, the images were offerred fruit tamales, chili sauce, dog meat, turkey, or incense. </p>
@@ -13,7 +16,26 @@
         <p>They were arrayed with headresses amd vestments daubed with liquid rubber  -- a lot of rubber. </p>
         <p>And early in the morning they went to the top of the Temple of Tlaloc. Once the priest had cut open their breasts, their bodies were rolled gently down the steps of the temple. Then, their heads were severed and inserted into the skull rack. </p>
         <p>The next day at dawn, took place a ceremony called “They are dismembered” – here, the images of amaranth seed dough were taken apart and eaten. </p>
+    </div>
         <a href="homepage.html">Return Home</a><br>
-        <a href="links.html">(Site Index)</a>
+        <div class="bottom_panel">
+            <a href="links.html">Index</a>
+        </div>
     </main>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+    </script>
 </body>
