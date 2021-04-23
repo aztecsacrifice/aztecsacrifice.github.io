@@ -7,6 +7,8 @@
     <main>
         <h1>Atl Caualo</h1> 
         <h3>"ceasing of water"</h3>
+        <button type="button" class="collapsible">Ritual Overview</button>
+        <div class="content">
         <p>
             First, a feast was celebrated for the Tlalocs (rain gods). <br>
             Blood sacrifices were made at Tepetzinco, or at Pantitlan -- here, they left consecrated papers and set up long poles called cuenmnantli. Here, they took the children known as "human banners" -- those chiddren who had two cowlicks whose day signs were favorable. They were thought to be the most precious blood-offerings, and were given to the rain gods in hope of rain. Everywhere they ereced cuenmantli, on which they placed white paper flags dotted with drops of liquid rubber. <br>
@@ -27,10 +29,27 @@
             Third time, red again. <br>
             And fourth, again, white. After this, the children were taken and slain. <br>
         </p>
+        </div>
         <a href="conclusion.html">So what's the conclusion?</a> <br>
         <a href="homepage.html">Return Home</a><br>
         <div class="bottom_panel">
             <a href="links.html">Index</a>
         </div>
     </main>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+    </script>
 </body>
