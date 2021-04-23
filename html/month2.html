@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <head>
+    <link rel="stylesheet" href="../css/mainstyle.css" type="text/css">
     <title>MONTH 2</title>
 </head>
 <body>
     <main>
         <h1>Tlacaxipeualiztli</h1> <br>
+        <button type="button" class="collapsible">Ritual Overview</button>
+        <div class="content">
         <p>
             This was when all the captives died -- all those taken in war: men, women, children. <br>
 The prisoners who were to die began to dance at noon; those who had taken captives held an aaall-nght vigil for their prisoners in the tribal temple. After half the night had passed, they took offerings of hair and blood from the prisoners.<br>
@@ -18,7 +21,26 @@ The next day, the glaiatorial sacrifice was made. A vigil was held all night for
 From those whom would offer sacrifice, they took hair from a midnight; this was called "the sening upward of the eagle man" because he who died in war into the presence of the sun. That is, he did not go to the land of the dead. So whoever took his hair, kept his hair safe. Thus, this captive was given many honors and riches. <br>
 He who took the captive was adorned at the temple of Tecanman (in Tenochtitlan) with white turkey down, the feathers being pasted upon him. The place where, arranged in order the tototecti remained, was upon white earth or grass, on which they waited.<br>
         </p>
+        </div>
         <a href="homepage.html">Return Home</a><br>
-        <a href="links.html">(Site Index)</a>
+        <div class="bottom_panel">
+            <a href="links.html">Index</a>
+        </div>
     </main>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+    </script>
 </body>

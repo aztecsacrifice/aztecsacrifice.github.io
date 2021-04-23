@@ -7,13 +7,11 @@ body {
 }
 
 .collapsible {
-    background-color: rgb(204, 158, 73);
-    color: rgb(0, 0, 0);
+    background-color: rgb(129, 123, 123);
+    color: rgb(206, 206, 206);
     cursor: pointer;
     padding: 18px;
-    margin-left: 10%;
-    margin-right: 10%;
-    width: 100%;
+    width: 75%;
     border: none;
     text-align: center;
     outline: none;
@@ -21,7 +19,7 @@ body {
   }
   
   .active, .collapsible:hover {
-    background-color: rgb(204, 151, 52);
+    background-color: rgb(83, 83, 83);
   }
   
   .content {
